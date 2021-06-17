@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Asly{
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  padding: 10rem;
+  color:#777;
+}
+.header{
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,rgba(126,213,111,0.8)
+  ,rgba(40,180,131,0.8))
+  ,url("./img/hero.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  clip-path: polygon(0 0,100% 0,100% 200px,0 100%);
+}
+.logo-box{
+
+  top: 2rem;
+  left: 5px;
+}
+.logo{
+height: 2.5rem;
+}
+.primary{
+    display: block;
+    color:#fff;
+    margin-top: 12rem;
+    margin-left: 35rem;
+    font-size: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+}
+
+.text-box{
+    animation: moveInRight 5s ease-out;
+  position: absolute;
+  top: 30%;
+    color:white;
+    text-align: center;
+  left: 50%;
+ transform: translate(-50%,-50%);
+}
+@keyframes moveInLeft {
+  0%{
+opacity: 0;
+    transform: translateX(-100px) rotate(-50deg);
+  }
+  60%{
+    transform: rotate(100deg);
+  }
+  80%{
+transform: translateX(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80%{
+    transform: translateX(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
